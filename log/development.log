@@ -1,0 +1,168 @@
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+Migrating to CreateUsers (20200701094759)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200701094759_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200701094759"]]
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-07-01 09:48:19.677337"], ["updated_at", "2020-07-01 09:48:19.677337"]]
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+Migrating to CreateTweetMsgs (20200701095005)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+Migrating to CreateTweetMsgs (20200701095005)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+Migrating to CreateTweetMsgs (20200701095005)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+Migrating to CreateUserTweets (20200701095154)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+Migrating to CreateTwitters (20200701095414)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200701095414_create_twitters.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "twitters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "message" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_73ea8ed4ab"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20200701095414_create_twitters.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_twitters_on_user_id" ON "twitters" ("user_id")[0m
+  ↳ db/migrate/20200701095414_create_twitters.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200701095414"]]
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (163.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (5.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Silpa"], ["username", "silpaprasad"], ["password", "123456"], ["created_at", "2020-07-01 09:58:16.485966"], ["updated_at", "2020-07-01 09:58:16.485966"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTwitter Load (29.4ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[36mTwitter Load (0.8ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTwitter Load (0.3ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTwitter Create (1.0ms)[0m  [1m[32mINSERT INTO "twitters" ("message", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "This is my first tweet"], ["user_id", 1], ["created_at", "2020-07-01 10:03:33.468082"], ["updated_at", "2020-07-01 10:03:33.468082"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTwitter Load (0.3ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTwitter Load (0.3ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTwitter Load (0.2ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTwitter Load (0.5ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" ORDER BY "twitters"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (0.3ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (0.4ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" WHERE "twitters"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (0.3ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" WHERE "twitters"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (0.3ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" WHERE "twitters"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (0.2ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" WHERE "twitters"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (1.9ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" WHERE "twitters"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (0.3ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" WHERE "twitters"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mTwitter Load (0.3ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (0.2ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" WHERE "twitters"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (0.2ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" WHERE "twitters"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mTwitter Load (0.3ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTwitter Load (0.3ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" ORDER BY "twitters"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (0.2ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" ORDER BY "twitters"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/varsha/.rvm/gems/ruby-2.4.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTwitter Create (2.4ms)[0m  [1m[32mINSERT INTO "twitters" ("message", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["message", "Helloo"], ["created_at", "2020-07-01 10:17:13.059665"], ["updated_at", "2020-07-01 10:17:13.059665"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (0.5ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" ORDER BY "twitters"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (0.5ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" WHERE "twitters"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTwitter Load (0.2ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" ORDER BY "twitters"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTwitter Update (0.7ms)[0m  [1m[33mUPDATE "twitters" SET "user_id" = ?, "updated_at" = ? WHERE "twitters"."id" = ?[0m  [["user_id", 1], ["updated_at", "2020-07-01 10:18:33.678017"], ["id", 2]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTwitter Load (0.3ms)[0m  [1m[34mSELECT  "twitters".* FROM "twitters" WHERE "twitters"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]

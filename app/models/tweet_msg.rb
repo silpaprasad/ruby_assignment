@@ -1,0 +1,2 @@
+class TweetMsg < ApplicationRecord
+end
