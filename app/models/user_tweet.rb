@@ -1,2 +1,0 @@
-class UserTweet < ApplicationRecord
-end

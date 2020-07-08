@@ -1,0 +1,101 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.form-header {
+    position: absolute;
+    width: 550px;
+    height: 100px;
+    left: 300px;
+    top: 50px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #000000;
+}
+.field-email{
+    position: absolute;
+    width: 550px;
+    height: 73px;
+    left: 291px;
+    top: 266px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+.field-pwd{
+    position: absolute;
+    width: 550px;
+    height: 73px;
+    left: 291px;
+    top: 439px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+.rect-1{
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    left: 291px;
+    top: 303px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.rect-2 {
+    position: absolute;
+width: 500px;
+height: 100px;
+left: 291px;
+top: 479px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 28px;
+}
+.actions  {
+    position: absolute;
+width: 155px;
+height: 73px;
+left: 648px;
+top: 690px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 33px;
+line-height: 40px;
+
+color: #000000;
+}

@@ -1,0 +1,23 @@
+<div class="form-header">
+  <p>RAILS ASSIGNMENT</p>
+  <p>SIGN IN</p>
+</div>
+
+
+<%= form_for(:user, url: sessions_path) do |f| %>
+  <div class="field-email">
+    <%= f.label :EMAIL %> <br/>
+  </div>
+    <%= f.text_field :name, class: 'rect-1' %>
+  <div class="field-pwd">
+    <%= f.label :PASSWORD %> <br/>
+  </div>
+  <%= f.password_field :password, class: 'rect-2' %>
+
+  <div class="actions">
+    <%= f.submit "SIGN IN" %>
+  </div>
+ <div class="signup">
+    <%= link_to "If not registered, sign up", new_user_path %>
+  </div>
+<% end %>
